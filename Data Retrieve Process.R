@@ -13,8 +13,8 @@ download.file(url="http://curl.haxx.se/ca/cacert.pem", destfile="cacert.pem")
 requestURL <- "https://api.twitter.com/oauth/request_token"
 accessURL = "https://api.twitter.com/oauth/access_token"
 authURL = "https://api.twitter.com/oauth/authorize"
-consumerKey = "zWttE9WES1Yr3hTegIagEPUAS"
-consumerSecret ="7gqevMFZ0a0jzHZHx9WS1dcuR8tZG3ffg7cDPfo9V78yqM18sd"
+consumerKey = ""
+consumerSecret =""
 Cred <- OAuthFactory$new(consumerKey=consumerKey, consumerSecret=consumerSecret, requestURL=requestURL, accessURL=accessURL, authURL=authURL)
 
 Cred$handshake(cainfo = system.file("CurlSSL", "cacert.pem", package = "RCurl") )
